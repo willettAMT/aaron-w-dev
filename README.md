@@ -19,10 +19,8 @@
 <li>Vue</li>
 <li>Angular</li>
 </ul>
+<br>
+<br>
+<br>
 
-```ts
-// store.ts
-// An extremely simple external store
-import { writable } from 'svelte/store';
-export default writable(0);
-```
+<a target="_blank" href="https://icons8.com/icon/84291/morty-smith">Morty Smith</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
