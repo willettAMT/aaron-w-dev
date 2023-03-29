@@ -13,13 +13,8 @@
     Check out <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">My github</a>, Hello buddies!
   </p>
 
-  <p class="read-the-docs">
-    Click on the Vite and Svelte logos to learn more
-  </p>
 </main>
 
 <style>
-  .read-the-docs {
-    color: #888;
-  }
+
 </style>
