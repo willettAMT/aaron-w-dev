@@ -4,7 +4,7 @@
 
 // init
 
-const camera = new THREE.PerspectiveCamera( 70, window.innerWidth / window.innerHeight, 0.01, 10 );
+const camera = new THREE.PerspectiveCamera( 90, window.innerWidth / window.innerHeight, 0.01, 10 );
 camera.position.z = 1;
 
 const scene = new THREE.Scene();
@@ -41,7 +41,7 @@ function animation( time ) {
   </div>
 
   <p>
-    Check out <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">my github</a>, friends!<br>
+    Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">github</a>, friends!<br>
     Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer">LinkedIn</a>!
   </p>
 
