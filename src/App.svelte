@@ -4,7 +4,6 @@
 <div>
 
   <h1>aaron willett</h1>
-  <h4><i>portfolio 0.0.2</i></h4>
 
   <div class="card">
     <Counter />
@@ -26,4 +25,7 @@
     Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer"><i>LinkedIn</i></a>!
   </p>
 </div>
+<footer>
+  <i>portfolio 0.0.2</i>
+</footer>
 
