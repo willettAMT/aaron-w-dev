@@ -17,13 +17,13 @@
 
        Previously, I worked on an open source product, Svelvet, as a software engineer, where I conceptualized and developed a <br>
        component library for building flow-charts on the Svelte compiler. <br>
-       Check out our documentation page (https://svelvet.io) for the playground!<br>
+       Check out our documentation page <a href="https://svelvet.io" target="_blank" rel="noreferrer"><i>Svelvet</i></a> for the playground!<br>
     </p>
   
 <div class="card"></div>
   <p>
-    Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">github</a>, friends!<br>
-    Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer">LinkedIn</a>!
+    Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer"><i>Github</i></a>, friends!<br>
+    Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer"><i>LinkedIn</i></a>!
   </p>
 </div>
 
