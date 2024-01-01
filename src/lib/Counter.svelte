@@ -1,6 +1,6 @@
 <script lang="ts">
   let count: number = 0;
-  const unclicked: string = "Click Me!";
+  const unclicked: string = "This is a counter!";
   const increment = () => {
     count += 1
   }
