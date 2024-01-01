@@ -9,7 +9,7 @@
   <div class="card">
     <Counter />
   </div>
-  <div class="card">
+  
     <p>Software engineer with experience creating developer-friendly products that improve efficiency of systems.<br>
        My current pathway is targeting IoT + AI and the application within different industries. <br>
        I am interested in secure data-aggregation at the hardware level, the research and development of <br>
@@ -19,7 +19,7 @@
        component library for building flow-charts on the Svelte compiler. <br>
        Check out our documentation page (https://svelvet.io) for the playground!<br>
     </p>
-  </div>
+  
 <div class="card"></div>
   <p>
     Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">github</a>, friends!<br>
