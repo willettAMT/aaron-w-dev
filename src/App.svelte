@@ -9,7 +9,7 @@ camera.position.z = 1;
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.BoxGeometry( 0.3, 0.7, 4e2 );
+const geometry = new THREE.BoxGeometry( 0.3, 0.7, 8 );
 const material = new THREE.MeshNormalMaterial();
 
 const mesh = new THREE.Mesh( geometry, material );
