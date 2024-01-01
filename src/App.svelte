@@ -4,12 +4,12 @@
 
 // init
 
-const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 0.1, 6 );
-camera.position.z = 1;
+const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 3, 6 );
+camera.position.z = 1.5;
 
 const scene = new THREE.Scene();
 
-const geometry = new THREE.BoxGeometry( 0.3, 0.7, 8 );
+const geometry = new THREE.BoxGeometry( 0.13, 0.17, 0.28 );
 const material = new THREE.MeshNormalMaterial();
 
 const mesh = new THREE.Mesh( geometry, material );
