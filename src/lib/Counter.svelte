@@ -7,5 +7,5 @@
 </script>
 
 <button on:click={increment}>
-  {count === 0 ? unclicked : count}
+  {count === 0 ? unclicked : `count is ${count}`}
 </button>
