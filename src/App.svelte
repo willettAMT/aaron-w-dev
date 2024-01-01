@@ -3,7 +3,8 @@
 </script>
 <main>
 
-  <h1>Portfolio Site 0.0.1</h1>
+  <h1>Aaron Willett</h1>
+  <h4><i>portfolio 0.0.2</i></h4>
 
   <div class="card">
     <Counter />
