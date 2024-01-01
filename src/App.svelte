@@ -14,7 +14,7 @@
        component library for building flow-charts on the Svelte compiler. <br>
        Check out our documentation page <a href="https://svelvet.io" target="_blank" rel="noreferrer"><i>Svelvet</i></a> for the playground!<br>
     </p>
-  
+</div>  
 <div class="card"></div>
   <p>
     Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer"><i>Github</i></a>, friends!<br>
