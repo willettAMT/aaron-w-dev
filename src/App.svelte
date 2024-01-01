@@ -41,7 +41,7 @@ function animation( time ) {
   </div>
 
   <p>
-    Check out <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">my github</a>, friends!
+    Check out <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer">my github</a>, friends!<br>
     Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer">LinkedIn</a>!
   </p>
 
