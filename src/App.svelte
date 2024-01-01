@@ -4,8 +4,8 @@
 
 // init
 
-const camera = new THREE.PerspectiveCamera( 50, window.innerWidth / window.innerHeight, 3, 6 );
-camera.position.z = 1.5;
+const camera = new THREE.PerspectiveCamera( 25, window.innerWidth / window.innerHeight, 0.1, 0.5 );
+camera.position.z = 1;
 
 const scene = new THREE.Scene();
 
