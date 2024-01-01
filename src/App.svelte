@@ -4,11 +4,7 @@
 <div>
 
   <h1>aaron willett</h1>
-
-  <div class="card">
-    <Counter />
-  </div>
-  
+ 
     <p>Software engineer with experience creating developer-friendly products that improve efficiency of systems.<br>
        My current pathway is targeting IoT + AI and the application within different industries. <br>
        I am interested in secure data-aggregation at the hardware level, the research and development of <br>
