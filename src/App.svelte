@@ -10,7 +10,7 @@ camera.position.z = 1;
 const scene = new THREE.Scene();
 
 const geometry = new THREE.SphereGeometry( 15, 47, 32 );
-const material = new THREE.MeshNormalMaterial();
+const material = new THREE.MeshNormalMaterial( { color: 0xffa444});
 
 const mesh = new THREE.Mesh( geometry, material );
 scene.add( mesh );
