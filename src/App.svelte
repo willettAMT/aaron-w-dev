@@ -14,12 +14,10 @@
        component library for building flow-charts on the Svelte compiler. <br>
        Check out our documentation page <a href="https://svelvet.io" target="_blank" rel="noreferrer"><i>Svelvet</i></a> for the playground!<br>
     </p>
-</div>  
-<div class="card"></div>
-  <p>
+    <p>
     Check out my <a href="https://github.com/willettAMT" target="_blank" rel="noreferrer"><i>Github</i></a>, friends!<br>
     Find me on <a href="https://linkedin.com/in/willettAMT" target="_blank" rel="noreferrer"><i>LinkedIn</i></a>!
-  </p>
+    </p>
 </div>
 <footer>
   <i>portfolio 0.0.2</i>
