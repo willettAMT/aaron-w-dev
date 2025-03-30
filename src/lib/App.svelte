@@ -1,6 +1,3 @@
-<script lang="ts">
-import Counter from './lib/Counter.svelte'
-</script>
 <div>
 
     <h1>aaron willett</h1>
@@ -23,6 +20,6 @@ import Counter from './lib/Counter.svelte'
     </p>
 </div>
 <footer>
-    <i>portfolio 0.0.2</i>
+    <i>portfolio 0.0.3</i>
 </footer>
 
