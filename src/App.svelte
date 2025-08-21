@@ -82,7 +82,7 @@
                 
                 <div class="project-links">
                     <a href="https://chrome.google.com/webstore/detail/job-tracker" class="btn btn-primary" target="_blank" rel="noreferrer">
-                        Chrome Store
+                        Chrome Store - Pending Approval
                     </a>
                     <a href="https://github.com/willettAMT/job-tracker-extension" class="btn btn-secondary" target="_blank" rel="noreferrer">
                         Source Code
@@ -142,6 +142,41 @@
                 <div class="project-links">
                     <a href="https://github.com/willettAMT/nvim" class="btn btn-secondary" target="_blank" rel="noreferrer">
                         View Config
+                    </a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">CA</div>
+                    <div class="project-meta">
+                        <h3 class="project-title">ChocAn System</h3>
+                        <div class="project-type">Healthcare Platform</div>
+                    </div>
+                    <div class="project-status academic">Academic</div>
+                </div>
+                
+                <p class="project-description">
+                    Production-grade healthcare provider platform built in C++ with PostgreSQL. 
+                    Multi-tier architecture with secure data access layer, advanced reporting, and compliance features.
+                </p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">C++</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">Multi-tier Architecture</span>
+                    <span class="tech-tag">Security</span>
+                </div>
+                
+                <div class="project-highlight">
+                    <strong>Key Features/Contributions:</strong>I personally designed and implemented Secure DAL with 
+                    parameterized queries, DTOs and base DAOs for standardized database operations, prepared
+                    statements for large datasets, advanced analytics reporting.
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/willettAMT/chocAn" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                        View Code
                     </a>
                 </div>
             </div>
@@ -443,6 +478,11 @@
     .project-status.daily-use {
         background: linear-gradient(135deg, var(--orange), var(--orange-light));
         border-color: var(--orange);
+    }
+
+    .project-status.academic {
+        background: linear-gradient(135deg, var(--dark-blue), var(--dark-blue-light));
+        border-color: var(--dark-blue-light);
     }
 
     .project-description {
