@@ -193,6 +193,44 @@
 </div>
 
 <style>
+    /* Custom Color Scheme */
+    :root {
+        --black: #0a0a0a;
+        --dark-green: #1a3b36;
+        --forest-green: #2d5a27;
+        --purple: #7c3aed;
+        --purple-light: #8b5cf6;
+        --purple-dark: #6d28d9;
+        --orange: #f97316;
+        --orange-light: #fb923c;
+        --dark-blue: #1e3a8a;
+        --dark-blue-light: #3b82f6;
+        
+        /* Text colors */
+        --text-primary: #f8fafc;
+        --text-secondary: #cbd5e1;
+        --text-muted: #94a3b8;
+    }
+
+    body {
+        margin: 0;
+        background: linear-gradient(135deg, var(--black) 0%, var(--dark-green) 100%);
+        color: var(--text-primary);
+        min-height: 100vh;
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+        line-height: 1.5;
+    }
+
+    a {
+        color: var(--purple-light);
+        text-decoration: none;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: var(--purple);
+    }
+
     .container {
         max-width: 1200px;
         margin: 0 auto;
@@ -203,11 +241,12 @@
     .hero {
         text-align: center;
         padding: 4rem 0 6rem 0;
-        background: linear-gradient(135deg, rgba(100, 108, 255, 0.1) 0%, rgba(83, 91, 242, 0.1) 100%);
+        background: linear-gradient(135deg, var(--dark-green) 0%, var(--forest-green) 50%, var(--dark-blue) 100%);
         border-radius: 20px;
         margin-bottom: 4rem;
         position: relative;
         overflow: hidden;
+        border: 1px solid rgba(124, 58, 237, 0.2);
     }
 
     .hero::before {
@@ -217,7 +256,7 @@
         left: 0;
         right: 0;
         bottom: 0;
-        background: radial-gradient(circle at 30% 20%, rgba(100, 108, 255, 0.15) 0%, transparent 50%);
+        background: radial-gradient(circle at 30% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 50%);
         pointer-events: none;
     }
 
@@ -229,26 +268,26 @@
     .hero-title {
         font-size: clamp(3rem, 8vw, 5.2rem);
         margin: 0 0 1rem 0;
-        color: rgba(255, 255, 255, 0.95);
-        text-shadow: 0 0 30px rgba(100, 108, 255, 0.5);
+        color: var(--text-primary);
+        text-shadow: 0 0 30px rgba(124, 58, 237, 0.5);
     }
 
     .hero-subtitle {
         font-size: 1.5rem;
-        color: #646cff;
+        color: var(--purple-light);
         margin-bottom: 0.5rem;
         font-weight: 500;
     }
 
     .hero-tagline {
         font-size: 1.1rem;
-        color: rgba(255, 255, 255, 0.7);
+        color: var(--text-secondary);
         font-style: italic;
         margin-bottom: 2rem;
     }
 
     .resume-btn {
-        background: linear-gradient(135deg, #646cff, #535bf2);
+        background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
         color: white;
         border: none;
         padding: 1rem 2rem;
@@ -258,19 +297,20 @@
         cursor: pointer;
         transition: all 0.3s ease;
         margin-top: 1rem;
+        border: 1px solid var(--purple-light);
     }
 
     .resume-btn:hover {
-        background: linear-gradient(135deg, #535bf2, #4c46d6);
+        background: linear-gradient(135deg, var(--purple-light) 0%, var(--purple) 100%);
         transform: translateY(-2px);
-        box-shadow: 0 10px 25px rgba(100, 108, 255, 0.4);
+        box-shadow: 0 10px 25px rgba(124, 58, 237, 0.4);
     }
 
     /* Sections */
     .section-title {
         font-size: 2.5rem;
         margin-bottom: 2rem;
-        color: rgba(255, 255, 255, 0.95);
+        color: var(--text-primary);
         position: relative;
         display: inline-block;
     }
@@ -282,7 +322,7 @@
         left: 0;
         width: 60px;
         height: 3px;
-        background: linear-gradient(90deg, #646cff, #535bf2);
+        background: linear-gradient(90deg, var(--purple), var(--orange));
         border-radius: 2px;
     }
 
@@ -292,9 +332,9 @@
     }
 
     .about-card {
-        background: rgba(255, 255, 255, 0.05);
+        background: linear-gradient(135deg, var(--dark-green) 0%, var(--forest-green) 100%);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 16px;
         padding: 2.5rem;
         transition: all 0.3s ease;
@@ -302,17 +342,18 @@
 
     .about-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        border-color: var(--purple-light);
     }
 
     .about-card p {
         line-height: 1.7;
         margin-bottom: 1.5rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--text-secondary);
     }
 
     .about-card strong {
-        color: #646cff;
+        color: var(--purple-light);
     }
 
     /* Projects Section */
@@ -327,9 +368,9 @@
     }
 
     .project-card {
-        background: rgba(255, 255, 255, 0.05);
+        background: linear-gradient(135deg, var(--dark-green) 0%, var(--forest-green) 100%);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 20px;
         padding: 2rem;
         transition: all 0.3s ease;
@@ -338,14 +379,15 @@
     }
 
     .project-card.featured {
-        border: 1px solid rgba(100, 108, 255, 0.3);
-        background: rgba(100, 108, 255, 0.08);
+        border: 1px solid var(--purple);
+        background: linear-gradient(135deg, var(--dark-green) 0%, var(--dark-blue) 100%);
+        box-shadow: 0 0 20px rgba(124, 58, 237, 0.2);
     }
 
     .project-card:hover {
         transform: translateY(-8px);
         box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
-        border-color: rgba(100, 108, 255, 0.5);
+        border-color: var(--purple-light);
     }
 
     .project-header {
@@ -358,7 +400,7 @@
     .project-icon {
         font-size: 1.2rem;
         font-weight: 700;
-        background: rgba(100, 108, 255, 0.2);
+        background: linear-gradient(135deg, var(--purple) 0%, var(--purple-dark) 100%);
         border-radius: 12px;
         padding: 0.5rem;
         display: flex;
@@ -366,8 +408,8 @@
         justify-content: center;
         min-width: 60px;
         height: 60px;
-        color: #646cff;
-        border: 2px solid rgba(100, 108, 255, 0.3);
+        color: white;
+        border: 2px solid var(--purple-light);
     }
 
     .project-meta {
@@ -377,17 +419,17 @@
     .project-title {
         font-size: 1.4rem;
         margin: 0 0 0.3rem 0;
-        color: rgba(255, 255, 255, 0.95);
+        color: var(--text-primary);
     }
 
     .project-type {
-        color: #646cff;
+        color: var(--purple-light);
         font-size: 0.9rem;
         font-weight: 500;
     }
 
     .project-status {
-        background: linear-gradient(135deg, #27ae60, #2ecc71);
+        background: linear-gradient(135deg, var(--forest-green), var(--dark-green));
         color: white;
         padding: 0.3rem 0.8rem;
         border-radius: 20px;
@@ -395,14 +437,16 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+        border: 1px solid var(--purple);
     }
 
     .project-status.daily-use {
-        background: linear-gradient(135deg, #f39c12, #e67e22);
+        background: linear-gradient(135deg, var(--orange), var(--orange-light));
+        border-color: var(--orange);
     }
 
     .project-description {
-        color: rgba(255, 255, 255, 0.8);
+        color: var(--text-secondary);
         line-height: 1.6;
         margin-bottom: 1.5rem;
     }
@@ -415,27 +459,27 @@
     }
 
     .tech-tag {
-        background: rgba(100, 108, 255, 0.2);
-        color: #646cff;
+        background: linear-gradient(135deg, var(--dark-blue) 0%, var(--purple-dark) 100%);
+        color: var(--text-primary);
         padding: 0.4rem 0.8rem;
         border-radius: 20px;
         font-size: 0.8rem;
         font-weight: 500;
-        border: 1px solid rgba(100, 108, 255, 0.3);
+        border: 1px solid var(--purple);
     }
 
     .project-highlight {
-        background: rgba(255, 193, 7, 0.1);
-        border: 1px solid rgba(255, 193, 7, 0.3);
+        background: linear-gradient(135deg, var(--orange) 10%, var(--forest-green) 100%);
+        border: 1px solid var(--orange);
         border-radius: 10px;
         padding: 1rem;
         margin-bottom: 1.5rem;
         font-size: 0.9rem;
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--text-primary);
     }
 
     .project-highlight strong {
-        color: #ffc107;
+        color: var(--orange-light);
     }
 
     .project-links {
@@ -454,28 +498,31 @@
         display: inline-flex;
         align-items: center;
         gap: 0.5rem;
+        border: none;
+        cursor: pointer;
     }
 
     .btn-primary {
-        background: linear-gradient(135deg, #646cff, #535bf2);
+        background: linear-gradient(135deg, var(--purple), var(--purple-dark));
         color: white;
     }
 
     .btn-primary:hover {
-        background: linear-gradient(135deg, #535bf2, #4c46d6);
+        background: linear-gradient(135deg, var(--purple-light), var(--purple));
         transform: translateY(-2px);
-        box-shadow: 0 10px 20px rgba(100, 108, 255, 0.3);
+        box-shadow: 0 10px 20px rgba(124, 58, 237, 0.3);
     }
 
     .btn-secondary {
-        background: rgba(255, 255, 255, 0.1);
-        color: rgba(255, 255, 255, 0.9);
-        border: 1px solid rgba(255, 255, 255, 0.2);
+        background: linear-gradient(135deg, var(--dark-blue), var(--forest-green));
+        color: var(--text-primary);
+        border: 1px solid var(--purple);
     }
 
     .btn-secondary:hover {
-        background: rgba(255, 255, 255, 0.2);
+        background: linear-gradient(135deg, var(--forest-green), var(--dark-blue));
         transform: translateY(-2px);
+        border-color: var(--purple-light);
     }
 
     /* Connect Section */
@@ -490,13 +537,13 @@
     }
 
     .connect-card {
-        background: rgba(255, 255, 255, 0.05);
+        background: linear-gradient(135deg, var(--dark-green) 0%, var(--forest-green) 100%);
         backdrop-filter: blur(10px);
-        border: 1px solid rgba(255, 255, 255, 0.1);
+        border: 1px solid rgba(124, 58, 237, 0.2);
         border-radius: 16px;
         padding: 2rem;
         text-decoration: none;
-        color: rgba(255, 255, 255, 0.9);
+        color: var(--text-secondary);
         transition: all 0.3s ease;
         display: flex;
         flex-direction: column;
@@ -506,15 +553,15 @@
 
     .connect-card:hover {
         transform: translateY(-5px);
-        background: rgba(100, 108, 255, 0.1);
-        border-color: rgba(100, 108, 255, 0.3);
-        color: white;
+        background: linear-gradient(135deg, var(--purple) 10%, var(--dark-green) 100%);
+        border-color: var(--purple-light);
+        color: var(--text-primary);
     }
 
     .connect-icon {
         font-size: 1.5rem;
         font-weight: 700;
-        color: #646cff;
+        color: var(--purple-light);
     }
 
     .connect-text {
@@ -667,6 +714,27 @@
         .resume-btn {
             padding: 0.8rem 1.5rem;
             font-size: 1rem;
+        }
+    }
+
+    /* Force dark mode - override system preferences */
+    @media (prefers-color-scheme: light) {
+        :root {
+            color: rgba(255, 255, 255, 0.87) !important;
+            background-color: #242424 !important;
+        }
+        
+        body {
+            background-color: #242424 !important;
+            color: rgba(255, 255, 255, 0.87) !important;
+        }
+        
+        a:hover {
+            color: #535bf2 !important;
+        }
+        
+        button {
+            background-color: #1a1a1a !important;
         }
     }
 </style>
