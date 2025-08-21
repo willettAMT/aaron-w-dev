@@ -27,7 +27,7 @@
         <div class="project-grid">
             <div class="project-card featured">
                 <div class="project-header">
-                    <div class="project-icon">📝</div>
+                    <div class="project-icon">JT</div>
                     <div class="project-meta">
                         <h3 class="project-title">Job Tracker</h3>
                         <div class="project-type">Chrome Extension</div>
@@ -54,17 +54,17 @@
                 
                 <div class="project-links">
                     <a href="https://chrome.google.com/webstore/detail/job-tracker" class="btn btn-primary" target="_blank" rel="noreferrer">
-                        🚀 Chrome Store
+                        Chrome Store
                     </a>
                     <a href="https://github.com/willettAMT/job-tracker" class="btn btn-secondary" target="_blank" rel="noreferrer">
-                        💻 Source
+                        Source Code
                     </a>
                 </div>
             </div>
 
             <div class="project-card">
                 <div class="project-header">
-                    <div class="project-icon">🔗</div>
+                    <div class="project-icon">SV</div>
                     <div class="project-meta">
                         <h3 class="project-title">Svelvet</h3>
                         <div class="project-type">Open Source Library</div>
@@ -85,7 +85,7 @@
                 
                 <div class="project-links">
                     <a href="https://svelvet.io" class="btn btn-primary" target="_blank" rel="noreferrer">
-                        🎮 Playground
+                        Playground
                     </a>
                 </div>
             </div>
@@ -96,11 +96,11 @@
         <h2 class="section-title">connect</h2>
         <div class="connect-grid">
             <a href="https://github.com/willettAMT" class="connect-card" target="_blank" rel="noreferrer">
-                <div class="connect-icon">💻</div>
+                <div class="connect-icon">GH</div>
                 <div class="connect-text">GitHub</div>
             </a>
             <a href="https://linkedin.com/in/willettAMT" class="connect-card" target="_blank" rel="noreferrer">
-                <div class="connect-icon">🔗</div>
+                <div class="connect-icon">LI</div>
                 <div class="connect-text">LinkedIn</div>
             </a>
         </div>
@@ -148,10 +148,8 @@
     .hero-title {
         font-size: clamp(3rem, 8vw, 5.2rem);
         margin: 0 0 1rem 0;
-        background: linear-gradient(135deg, #fff 0%, #646cff 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        color: rgba(255, 255, 255, 0.95);
+        text-shadow: 0 0 30px rgba(100, 108, 255, 0.5);
     }
 
     .hero-subtitle {
@@ -257,7 +255,8 @@
     }
 
     .project-icon {
-        font-size: 2.5rem;
+        font-size: 1.2rem;
+        font-weight: 700;
         background: rgba(100, 108, 255, 0.2);
         border-radius: 12px;
         padding: 0.5rem;
@@ -266,6 +265,8 @@
         justify-content: center;
         min-width: 60px;
         height: 60px;
+        color: #646cff;
+        border: 2px solid rgba(100, 108, 255, 0.3);
     }
 
     .project-meta {
@@ -406,7 +407,9 @@
     }
 
     .connect-icon {
-        font-size: 2rem;
+        font-size: 1.5rem;
+        font-weight: 700;
+        color: #646cff;
     }
 
     .connect-text {
