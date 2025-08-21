@@ -93,6 +93,34 @@
                     </a>
                 </div>
             </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <div class="project-icon">NV</div>
+                    <div class="project-meta">
+                        <h3 class="project-title">Neovim Config</h3>
+                        <div class="project-type">Development Environment</div>
+                    </div>
+                    <div class="project-status daily-use">Daily Use</div>
+                </div>
+                
+                <p class="project-description">
+                    Custom Neovim configuration optimized for systems programming and embedded development. 
+                    Cross-platform setup supporting ArchOS and MacOS with nvim >=0.11.0.
+                </p>
+                
+                <div class="tech-stack">
+                    <span class="tech-tag">Lua</span>
+                    <span class="tech-tag">Neovim</span>
+                    <span class="tech-tag">LSP</span>
+                </div>
+                
+                <div class="project-links">
+                    <a href="https://github.com/willettAMT/nvim" class="btn btn-secondary" target="_blank" rel="noreferrer">
+                        View Config
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -298,6 +326,10 @@
         font-weight: 600;
         text-transform: uppercase;
         letter-spacing: 0.5px;
+    }
+
+    .project-status.daily-use {
+        background: linear-gradient(135deg, #f39c12, #e67e22);
     }
 
     .project-description {
