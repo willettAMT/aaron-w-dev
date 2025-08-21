@@ -176,13 +176,13 @@
                 </div>
                 <div class="modal-body">
                     <iframe 
-                        src="./assets/summer24_res.pdf" 
+                        src="/summer24_res.pdf" 
                         title="Aaron Willett Resume"
                         class="pdf-viewer">
                     </iframe>
                 </div>
                 <div class="modal-footer">
-                    <a href="./assets/summer24_res.pdf" download="aaron-willett-resume.pdf" class="btn btn-primary">
+                    <a href="/summer24_res.pdf" download="aaron-willett-resume.pdf" class="btn btn-primary">
                         Download PDF
                     </a>
                     <button class="btn btn-secondary" on:click={closeModal}>Close</button>
