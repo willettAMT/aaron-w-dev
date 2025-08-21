@@ -60,7 +60,7 @@
                         <h3 class="project-title">Job Tracker</h3>
                         <div class="project-type">Chrome Extension</div>
                     </div>
-                    <div class="project-status">Live</div>
+                    <div class="project-status">Under Review</div>
                 </div>
                 
                 <p class="project-description">
