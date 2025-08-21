@@ -11,12 +11,16 @@
         <div class="about-card">
             <h2 class="section-title">about</h2>
             <p>
-                Passionate about building efficient, developer-friendly systems with a focus on <strong>IoT, embedded systems, and low-level programming</strong>. 
-                Currently exploring ways to solve the "30 million line problem" and make software more maintainable, performant, and secure in resource-constrained environments.
+                Passionate about building efficient, developer-friendly systems with a focus on <strong>IoT, embedded systems, scalable backend systems, and low-level programming</strong>. 
+                Currently exploring ways to make software more maintainable, performant, and secure—especially in resource-constrained environments.
             </p>
             <p>
-                <strong>Current focus:</strong> Embedded C, NASM, embedded Rust, malware reverse engineering, web and cloud security. 
-                Contributing to firmware development with Portland State Aerospace Society.
+                <strong>Current coursework:</strong> System design, performance optimization, cloud security, and systems programming. 
+                Contributing to firmware development with Portland State Aerospace Society, with interests spanning secure data aggregation at the hardware level, 
+                securing wireless protocols, and optimizing system efficiency from the ground up.
+            </p>
+            <p>
+                If you'd like to chat about anything tech-related, feel free to reach out!
             </p>
         </div>
     </section>
