@@ -1,9 +1,33 @@
+<script>
+    let showModal = false;
+
+    function openModal() {
+        showModal = true;
+        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    }
+
+    function closeModal() {
+        showModal = false;
+        document.body.style.overflow = 'auto'; // Restore scrolling
+    }
+
+    // Close modal on Escape key
+    function handleKeydown(event) {
+        if (event.key === 'Escape' && showModal) {
+            closeModal();
+        }
+    }
+</script>
+
+<svelte:window on:keydown={handleKeydown} />
+
 <div class="container">
     <header class="hero">
         <div class="hero-content">
             <h1 class="hero-title">aaron willett</h1>
             <div class="hero-subtitle">software engineer</div>
             <div class="hero-tagline">building efficient systems • tackling complexity • securing the future</div>
+            <button class="resume-btn" on:click={openModal}>View Resume</button>
         </div>
     </header>
 
@@ -141,6 +165,31 @@
     <footer class="footer">
         <i>portfolio v0.1.0 • built with svelte</i>
     </footer>
+
+    <!-- Resume Modal -->
+    {#if showModal}
+        <div class="modal-backdrop" on:click={closeModal}>
+            <div class="modal-content" on:click|stopPropagation>
+                <div class="modal-header">
+                    <h3>Resume - Aaron Willett</h3>
+                    <button class="modal-close" on:click={closeModal}>&times;</button>
+                </div>
+                <div class="modal-body">
+                    <iframe 
+                        src="./assets/summer24_res.pdf" 
+                        title="Aaron Willett Resume"
+                        class="pdf-viewer">
+                    </iframe>
+                </div>
+                <div class="modal-footer">
+                    <a href="./assets/summer24_res.pdf" download="aaron-willett-resume.pdf" class="btn btn-primary">
+                        Download PDF
+                    </a>
+                    <button class="btn btn-secondary" on:click={closeModal}>Close</button>
+                </div>
+            </div>
+        </div>
+    {/if}
 </div>
 
 <style>
@@ -195,6 +244,26 @@
         font-size: 1.1rem;
         color: rgba(255, 255, 255, 0.7);
         font-style: italic;
+        margin-bottom: 2rem;
+    }
+
+    .resume-btn {
+        background: linear-gradient(135deg, #646cff, #535bf2);
+        color: white;
+        border: none;
+        padding: 1rem 2rem;
+        border-radius: 12px;
+        font-size: 1.1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        margin-top: 1rem;
+    }
+
+    .resume-btn:hover {
+        background: linear-gradient(135deg, #535bf2, #4c46d6);
+        transform: translateY(-2px);
+        box-shadow: 0 10px 25px rgba(100, 108, 255, 0.4);
     }
 
     /* Sections */
@@ -490,6 +559,114 @@
 
         .btn {
             justify-content: center;
+        }
+    }
+
+    /* Modal Styles */
+    .modal-backdrop {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(5px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1000;
+        padding: 1rem;
+    }
+
+    .modal-content {
+        background: rgba(36, 36, 36, 0.95);
+        backdrop-filter: blur(20px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        width: 90%;
+        max-width: 900px;
+        height: 90%;
+        max-height: 800px;
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+        box-shadow: 0 25px 50px rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1.5rem 2rem;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .modal-header h3 {
+        margin: 0;
+        color: rgba(255, 255, 255, 0.95);
+        font-size: 1.3rem;
+    }
+
+    .modal-close {
+        background: none;
+        border: none;
+        color: rgba(255, 255, 255, 0.7);
+        font-size: 2rem;
+        cursor: pointer;
+        padding: 0;
+        width: 40px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-radius: 50%;
+        transition: all 0.3s ease;
+    }
+
+    .modal-close:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .modal-body {
+        flex: 1;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    .pdf-viewer {
+        width: 100%;
+        height: 100%;
+        border: none;
+        background: white;
+    }
+
+    .modal-footer {
+        display: flex;
+        gap: 1rem;
+        padding: 1.5rem 2rem;
+        border-top: 1px solid rgba(255, 255, 255, 0.1);
+        justify-content: flex-end;
+    }
+
+    @media (max-width: 768px) {
+        .modal-content {
+            width: 95%;
+            height: 95%;
+        }
+
+        .modal-header {
+            padding: 1rem;
+        }
+
+        .modal-footer {
+            padding: 1rem;
+            flex-direction: column;
+        }
+
+        .resume-btn {
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
         }
     }
 </style>
