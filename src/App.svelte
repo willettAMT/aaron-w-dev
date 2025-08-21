@@ -81,7 +81,7 @@
                 </div>
                 
                 <div class="project-links">
-                    <a href="https://chrome.google.com/webstore/detail/job-tracker" class="btn btn-primary" target="_blank" rel="noreferrer">
+                    <a href="https://chrome.google.com/webstore/detail/job-tracker-extension" class="btn btn-primary" target="_blank" rel="noreferrer">
                         Chrome Store
                     </a>
                     <a href="https://github.com/willettAMT/job-tracker" class="btn btn-secondary" target="_blank" rel="noreferrer">
