@@ -1,8 +1,0 @@
-Software engineer with experience creating developer-friendly products that improve efficiency of systems.<br>
-My current pathway is targeting IoT + AI and the application within different industries. <br>
-I am interested in secure data-aggregation at the hardware level, the research and development of <br>
-DL models interpreting the raw data, securing wireless protocols, and the cloud infrastructure for optimizing device UX.<br><br>
-
-Previously, I worked on an open source product, Svelvet, as a software engineer, where I conceptualized and developed a <br>
-component library for building flow-charts on the Svelte compiler. <br>
-Check out our documentation page
