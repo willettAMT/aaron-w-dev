@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
     let showModal = false;
 
     function openModal() {
@@ -12,7 +12,7 @@
     }
 
     // Close modal on Escape key
-    function handleKeydown(event) {
+    function handleKeydown(event: KeyboardEvent) {
         if (event.key === 'Escape' && showModal) {
             closeModal();
         }
